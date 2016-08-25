@@ -25,6 +25,18 @@ public class ImmersiveUI {
             Log.d(TAG, "not an AppCompatActivity");
         }
     }
+    public static void showActionBar(Activity activity) {
+        if (activity instanceof AppCompatActivity) {
+            ActionBar actionBar = ((AppCompatActivity)activity).getSupportActionBar();
+            if (actionBar == null) {
+                Log.d(TAG, "action bar is null.");
+            } else {
+                actionBar.show();
+            }
+        } else {
+            Log.d(TAG, "not an AppCompatActivity");
+        }
+    }
 
     public static void hideHead(Activity activity) {
         setFlag(activity, View.SYSTEM_UI_FLAG_FULLSCREEN);
@@ -57,6 +69,11 @@ public class ImmersiveUI {
             activity.getWindow().setNavigationBarColor(Color.TRANSPARENT);
         }
         hideActionBar(activity);
+    }
+
+    public static void quit(Activity activity){
+        setFlag(activity, View.SYSTEM_UI_FLAG_VISIBLE);
+        showActionBar(activity);
     }
 
     public static void fullScreen(Activity activity) {

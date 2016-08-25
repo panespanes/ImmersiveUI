@@ -2,6 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:fadeScrollbars="false"
     android:fillViewport="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -96,6 +99,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="setBottom" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"></View>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="97dp"
+            android:src="@drawable/shot_default" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quitImmersiveUI" />
 
     </LinearLayout>
 

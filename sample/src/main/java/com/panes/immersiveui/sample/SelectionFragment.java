@@ -26,6 +26,7 @@ public class SelectionFragment extends Fragment implements View.OnClickListener{
         view.findViewById(R.id.immersiveBottom).setOnClickListener(this);
         view.findViewById(R.id.immersive).setOnClickListener(this);
         view.findViewById(R.id.fullScreen).setOnClickListener(this);
+        view.findViewById(R.id.quit).setOnClickListener(this);
     }
 
     private void startAct(int action) {
@@ -52,6 +53,9 @@ public class SelectionFragment extends Fragment implements View.OnClickListener{
                 break;
             case R.id.fullScreen:
                 startAct(4);
+                break;
+            case R.id.quit:
+                startAct(5);
                 break;
         }
     }

@@ -35,6 +35,9 @@ public class PreviewActivity extends AppCompatActivity {
             case 4:
                 ImmersiveUI.fullScreen(this);
                 break;
+            case 5:
+                ImmersiveUI.quit(this);
+                break;
             default:
                 Log.d("ImmersiveUI", "action is null.");
                 break;
