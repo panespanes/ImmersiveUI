@@ -52,4 +52,10 @@ and hide StatusBar:
 and make a full screen experience:   
 ![full](https://github.com/panespanes/ImmersiveUI/raw/master/full_hide_4.png)   
    
+Finally, if you want to go back to system default UI, just do like this:
+```java
+	ImmersiveUI.quit(activity);
+```
+
+
 creat your Immersive UI right now !
