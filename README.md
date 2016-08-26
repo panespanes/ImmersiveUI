@@ -48,4 +48,8 @@ or separately modify NavigationBar:
 and hide StatusBar:   
 ![hide](https://github.com/panespanes/ImmersiveUI/raw/master/hideTop_4.png)   
    
+      
+and make a full screen experience:   
+![full](https://github.com/panespanes/ImmersiveUI/raw/master/full_hide_4.png)   
+   
 creat your Immersive UI right now !
